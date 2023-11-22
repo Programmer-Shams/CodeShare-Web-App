@@ -32,3 +32,7 @@ export const PostValidation = z.object({
   location: z.string().min(1, { message: "This field is required" }).max(1000, { message: "Maximum 1000 characters." }),
   tags: z.string(),
 });
+
+export const CommentValidation = z.object({
+  thread: z.string().nonempty().min(3, { message: "Minimum 3 characters." }),
+});

@@ -1,18 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./global.css";
 import { BrowserRouter } from "react-router-dom";
-import AuthProvider from "./context/AuthContext.tsx";
-import { QueryProvider } from "./lib/react-query/QueryProvider.tsx";
+
+// import { AuthProvider } from "@/context/AuthContext";
+import { QueryProvider } from "@/lib/react-query/QueryProvider";
+
+import App from "./App";
+import AuthProvider from "./context/AuthContext";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
-    <QueryProvider>
-      <AuthProvider>
-        <React.StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
+      <QueryProvider>
+        <AuthProvider>
           <App />
-        </React.StrictMode>
-      </AuthProvider>
-    </QueryProvider>
-  </BrowserRouter>
+        </AuthProvider>
+      </QueryProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 );

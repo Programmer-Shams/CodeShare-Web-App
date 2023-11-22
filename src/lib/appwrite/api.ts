@@ -230,6 +230,8 @@ export async function getPostById(postId: string) {
     console.log(error)
   }
 }
+
+
 export async function updatePost(post: IUpdatePost) {
   const hasFileToUpload = post.file.length > 0
 
