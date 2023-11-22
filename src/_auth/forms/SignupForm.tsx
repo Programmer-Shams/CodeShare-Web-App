@@ -19,7 +19,7 @@ import {
   useCreateUserAccount,
   useSignInAccount,
 } from "@/lib/react-query/queriesAndMutations";
-import { signInAccount } from "@/lib/appwrite/api";
+// import { signInAccount } from "@/lib/appwrite/api";
 import { useUserContext } from "@/context/AuthContext";
 
 const SignupForm = () => {

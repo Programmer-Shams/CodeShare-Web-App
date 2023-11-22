@@ -19,7 +19,7 @@ import { useCreatePost, useUpdatePost } from "@/lib/react-query/queriesAndMutati
 import { useUserContext } from "@/context/AuthContext"
 import { useToast } from "../ui/use-toast"
 import { useNavigate } from "react-router-dom"
-import { updatePost } from "@/lib/appwrite/api"
+// import { updatePost } from "@/lib/appwrite/api"
  
 type PostFormProps = {
     post?: Models.Document,

@@ -2,7 +2,7 @@ import { useDeleteSavedPost, useGetCurrentUser, useLikePost, useSavePost } from 
 import { checkIsLiked } from '@/lib/utils'
 import { Models } from 'appwrite'
 import React, { useEffect, useState } from 'react'
-import Loader from './Loader'
+// import Loader from './Loader'
 type PostStatsProps = {
     post?: Models.Document
     userId: string

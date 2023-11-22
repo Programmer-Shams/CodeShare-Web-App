@@ -8,16 +8,15 @@ import {
   FormField, 
   FormItem,
   FormLabel,
-  FormMessage,
+  // FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import FileUploader from "../shared/FileUploader"
 import { CommentValidation } from "@/lib/validation"
-import { Models } from "appwrite"
-import { useCreatePost, useGetPostById, useUpdatePost } from "@/lib/react-query/queriesAndMutations"
+// import { Models } from "appwrite"
+// import { useCreatePost, useGetPostById, useUpdatePost } from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
-import { useToast } from "../ui/use-toast"
-import { useNavigate, useParams } from "react-router-dom"
+import {  useParams } from "react-router-dom"
+import { useGetPostById } from "@/lib/react-query/queriesAndMutations"
 
 
 const Comments = () => {
@@ -26,8 +25,6 @@ const Comments = () => {
     const { data: post, isLoading } = useGetPostById(id || "");
     // const { mutateAsync: createPost, isLoading: isLoadingCreate } =  useCreatePost()
     // const { mutateAsync: updatePost, isLoading: isLoadingUpdate } =  useUpdatePost()
-    const { toast } = useToast()
-    const  navigate  = useNavigate()
 
 
     // 1. Define your form.
