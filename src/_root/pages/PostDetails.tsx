@@ -1,4 +1,4 @@
-import Comments from "@/components/forms/Comments";
+
 import Loader from "@/components/shared/Loader";
 import PostStats from "@/components/shared/PostStats";
 import { Button } from "@/components/ui/button";
@@ -76,12 +76,7 @@ const PostDetails = () => {
             <div className="w-full">
               <PostStats post={post} userId={user.id}/>
             </div>
-            <div className="mt-1 w-full">
-              <Comments
-              // userId={user.id}
-              
-               />
-            </div>
+    
           </div>
         </div>
       )}
