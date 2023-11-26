@@ -108,7 +108,7 @@ const PostForm = ({post, action}: PostFormProps) => {
           name="location"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="shad-form_label">Add Location</FormLabel>
+              <FormLabel className="shad-form_label">Tech Stack</FormLabel>
               <FormControl>
                 <Input className="shad-input" {...field}/>
               </FormControl>
@@ -123,7 +123,7 @@ const PostForm = ({post, action}: PostFormProps) => {
             <FormItem>
               <FormLabel className="shad-form_label">Add Tags (seprated by comma " , ")</FormLabel>
               <FormControl>
-                <Input className="shad-input" placeholder="Art, Expression, Learn" {...field}/>
+                <Input className="shad-input" placeholder="Tech, Innovation, Learn" {...field}/>
               </FormControl>
               <FormMessage className="shad-form_message" />
             </FormItem>
