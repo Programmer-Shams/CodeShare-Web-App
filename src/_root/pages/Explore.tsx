@@ -52,6 +52,7 @@ const Explore = () => {
         <h2 className="h3-bold md:h2-bold w-full">Search Posts</h2>
         <div className="flex gap-1 px-4 w-full rounded-lg bg-dark-4">
           <img
+          className=''
             src="/assets/icons/search.svg"
             width={24}
             height={24}

@@ -7,8 +7,6 @@ export const appwriteConfig = {
     userCollectionId: "6541e898a7f1338b995d",
     postCollectionId: "6541e8383c114ae8c912",
     savesCollectionId: "6541e8ce7c25ffcb4218",
-
-
 }
 export const client = new Client()
 client.setProject(appwriteConfig.projectId)
